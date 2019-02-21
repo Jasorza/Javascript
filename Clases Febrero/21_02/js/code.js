@@ -54,4 +54,28 @@ printArray(movies,'Peliculas de Super Heroes');
 
 //** Borrando el ultimo */
 var indice = prompt('Ingrese el Indice');
-var Array = prompt('Ingrese L para Programación o P para Peliculas');
+var array = prompt('Ingrese L para Programación o P para Peliculas');
+
+
+//** --------------------------------------------------------------- */
+var categorias = ['Ficción', 'Terror', 'Acción'];
+var movies = ['Maze Runner', 'Terminator', 'Ready Player One', 'Divergente', 'Saw', 'Anabelle', 'Exterminio', 'El Resplandor', 'Battle Angel', 'Bumbleble', 'Jhon Wick', 'Venom', ];
+var cine = [categorias, movies];
+
+document.write('<table>')
+for (const key in movies) {
+    document.write(`<tr><ul><li> Elemento ${key} </li></ul></tr>`)
+}
+
+document.write('</table>')
+
+
+// document.write("<h1>Recorriendo el objeto Carrito de Compras</h1>");
+// document.write("<ul>");
+// for (const key in carrito) {
+//     document.write(`<li> Elemento ${key} del Carrito</li>`);
+//     document.write("<ul>");
+//     Object.values(carrito[key]).forEach(element => {
+//         document.write("<li>" + element + "</li>");
+//     });
+//     document.write("</ul></li>");
