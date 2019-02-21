@@ -80,4 +80,3 @@ var cine2 = [categorias, movies3];
 console.log('cine', cine2);
 console.log(cine2[0][2]);
 console.log(cine2[1][2]);
->>>>>>> 27d4ad2b03b4166b3ebd7bc1070d257ebdf256d8
