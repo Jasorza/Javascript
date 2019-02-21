@@ -32,50 +32,52 @@ var nombre3 = ['Jhon', 'Carlor', 'Brayan', 'Camilo'];
 var codes = ['Js', 'Ruby', 'Java', 'PHP', 'C#'];
 var movies = ['Watchmen', 'Avengers', 'Deadpool'];
 
-//** Agrando */
+//** Agregando */
 codes.push('Swift');
 
 function printArray(arreglo, opcion) {
     document.write('<h1>Imprimiendo Arreglo de ' + opcion + '</h1>');
     document.write('<ul>');
     for (const key in arreglo) {
-        document.write('<li>'+arreglo[key]+'</li>');
+        document.write('<li>' + arreglo[key] + '</li>');
     }
     document.write('</ul>');
 }
-printArray(codes,'Lenguajes de Programación');
-printArray(movies,'Peliculas de Super Heroes');
+printArray(codes, 'Lenguajes de Programación');
+printArray(movies, 'Peliculas de Super Heroes');
 //** --------------------------------------------------------------- */
 
 //** Borrando el ultimo */
 movies.pop();
-printArray(movies,'Peliculas de Super Heroes');
+printArray(movies, 'Peliculas de Super Heroes');
 //** --------------------------------------------------------------- */
 
-//** Borrando el ultimo */
+//** */
 var indice = prompt('Ingrese el Indice');
-var array = prompt('Ingrese L para Programación o P para Peliculas');
 
-
+var Array = prompt('Ingrese L para Programación o P para Peliculas');
 //** --------------------------------------------------------------- */
-var categorias = ['Ficción', 'Terror', 'Acción'];
-var movies = ['Maze Runner', 'Terminator', 'Ready Player One', 'Divergente', 'Saw', 'Anabelle', 'Exterminio', 'El Resplandor', 'Battle Angel', 'Bumbleble', 'Jhon Wick', 'Venom', ];
-var cine = [categorias, movies];
 
-document.write('<table>')
-for (const key in movies) {
-    document.write(`<tr><ul><li> Elemento ${key} </li></ul></tr>`)
-}
+//** */
+// var categorias = ['Comedia', 'Terror', 'Accion', 'Ficcion'];
+// var movies2 = ['X-Men', 'Toy Story', 'Rapidos y Furiosos', 'Tictanic'];
+// var cine = [categorias, movies2];
+// console.log('cine', cine);
+// console.log(cine[0][3]);
+// console.log(cine[1][2]);
 
-document.write('</table>')
+// Crear un arreglo multimensio de 4 filas y 3 columnas, cada columna corresponde al genero de una pelicula
+// Eje: La columna 0 = ficcionm, Columna 1 = Terror, Columna 2 = Accion. 
+// Es asi como se tendra que imprimir:
+// Ficcion: Jumanji                Terror: XXXXX           Accion: XXXXX
+// Ficcion: Harry Potter           Terror: XXXXX           Accion: XXXXX
+// Ficcion: Dia de Independcia     Terror: XXXXX           Accion: XXXXX
+// Ficcion: X-Men                  Terror: XXXXX           Accion: XXXXX
 
-
-// document.write("<h1>Recorriendo el objeto Carrito de Compras</h1>");
-// document.write("<ul>");
-// for (const key in carrito) {
-//     document.write(`<li> Elemento ${key} del Carrito</li>`);
-//     document.write("<ul>");
-//     Object.values(carrito[key]).forEach(element => {
-//         document.write("<li>" + element + "</li>");
-//     });
-//     document.write("</ul></li>");
+var categorias = ['Ficcion', 'Terror', 'Accion'];
+var movies3 = ['Maze Runner', 'Divergente', 'Yo, Robot', 'Ready Player One', 'Saw', 'Anabelle', 'Exterminio', 'El Resplandor', 'Battle Angel', 'Bumbleble', 'Jhon Wick', 'Venom'];
+var cine2 = [categorias, movies3];
+console.log('cine', cine2);
+console.log(cine2[0][2]);
+console.log(cine2[1][2]);
+>>>>>>> 27d4ad2b03b4166b3ebd7bc1070d257ebdf256d8
