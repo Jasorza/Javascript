@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,25 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-    <p><button class="btngeneral" id="btnReg">Registrar</button>
+    <p>
+        <!-- Eventos JS desde Html -->
+        <button class="btnGeneral" id="btnReg" onclick="alert('Presionando el Boton Principal')">
+            Registrar
+        </button>
     </p>
+    <p>
+        <!-- Eventos JS desde Html Utilizando funciones -->
+        <button class="btnGeneral" id="btnColor" onclick="cambiarColor()">
+            Cambiar Color
+        </button>
+    </p>
+    
+    
+
+
     <script src="js/eventos2.js"></script>
 </body>
+
 </html>
