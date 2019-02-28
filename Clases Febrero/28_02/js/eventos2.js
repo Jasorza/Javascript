@@ -53,15 +53,15 @@ btnAddOnMouseOver.onmouseover = function () {
 
 //** ---------------------------------------------------- */
 btnAnimar.onmouseover = function () {
-    this.classList.add('.Animar');
+    this.classList.add('animar');
 };
 
-btnAnimar.onmouseout = function () {
-    this.classList.remove('.Animar');
+btnAnimar.onmouseout = () => {
+    this.classList.remove('animar');
 };
 
 //** ---------------------------------------------------- */
 
 btnAnimar.onmouseover = function () {
-    this.classList.toggle('.Animar2');
+    this.classList.toggle('animar2');
 };
