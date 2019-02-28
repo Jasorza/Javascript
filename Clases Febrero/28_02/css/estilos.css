@@ -1,0 +1,19 @@
+.bntgeneral{
+    background: black;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-style: bold;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 20px;
+    transition-property: color, backgroud-color, width;
+    transition-duration: 2s,2s,2s;
+    transition-timing-function: linear, ease-out, ease-out;
+    -webkit-transition-property: color, backgroud-color, width;
+    -webkit-transition-duration: 2s,2s,2s;
+    -webkit-transition-timing-function: linear, ease-out, ease-out;
+    -moz-transition-property: color, backgroud-color, width;
+    -moz-transition-duration: 2s,2s,2s;
+    -moz-transition-timing-function: linear, ease-out, ease-out;
+}
