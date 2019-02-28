@@ -1,5 +1,5 @@
-.btnGeneral{
-    background: black;
+.btnGeneral {
+    background: pink;
     width: 300px;
     color: white;
     text-align: center;
@@ -7,13 +7,31 @@
     font-size: 24px;
     padding: 20px;
     border-radius: 20px;
-    transition-property: color, backgroud-color, width;
-    transition-duration: 2s,2s,2s;
-    transition-timing-function: linear, ease-out, ease-out;
-    -webkit-transition-property: color, backgroud-color, width;
-    -webkit-transition-duration: 2s,2s,2s;
-    -webkit-transition-timing-function: linear, ease-out, ease-out;
-    -moz-transition-property: color, backgroud-color, width;
-    -moz-transition-duration: 2s,2s,2s;
-    -moz-transition-timing-function: linear, ease-out, ease-out;
+    transition: background 5s ease-out;
+    -webkit-transition: background 5s ease-out;
+    -moz-transition: background 5s ease-out;
+    -ms-transition: background 5s ease-out;
+    -o-transition: background 5s ease-out;
+}
+
+.animar{
+    color:#fff;
+    background-color: #ed235d;
+    width: 150px;
+    transition: all 5s ease-out;
+    -webkit-transition: all 5s ease-out;
+    -moz-transition: all 5s ease-out;
+    -ms-transition: all 5s ease-out;
+    -o-transition: all 5s ease-out;
+}
+
+.animar2{
+    color:#fff;
+    background-color: rgb(138, 43, 226);
+    width: 850px;
+    transition: all 5s ease-out;
+    -webkit-transition: all 5s ease-out;
+    -moz-transition: all 5s ease-out;
+    -ms-transition: all 5s ease-out;
+    -o-transition: all 5s ease-out;
 }
