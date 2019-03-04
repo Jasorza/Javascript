@@ -1,0 +1,48 @@
+p {
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    p {
+        text-align: justify;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    body {
+        background-color: purple;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        float: right;
+    }
+}
+
+@media (min-width: 920px){
+    body{
+        background-color: yellow;
+    }
+    p{
+        text-align: right;
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+    .invisible{
+        display: none;
+    }
+}
