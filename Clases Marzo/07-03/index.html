@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,25 @@
     <link rel="stylesheet" href="css/estilos.css">
     <title>Document</title>
 </head>
+
 <body>
     <div id="formulario">
         <from action=# id="formRegister" onsubmit="metFormulario.valFormCompleto()">
             <p>
                 <i class="fas fa-user-alt icon"> </i>
-                <input class="validar" type="text" placeholder="Ingrese Nombre minimo 2 Caracteres, maximo 6 caracteres alfabeticos" id="name">
-                <label for="name" class="obligartorio"><span class="obligatorio">Campo Obligatorio *</span></label>
+                <input class="validar" type="text" placeholder="Ingrese Nombre minimo 2 Caracteres, maximo 6 caracteres alfabeticos"
+                    id="name">
+                <label for="name"><span class="obligatorio">Campo Obligatorio *</span></label>
             </p>
             <p>
                 <i class="fas fa-file-signature icon"> </i>
-                <input class="validar" type="password" placeholder="Escriba su contraseña con minimo 8 caracteres con letras en Mayus, Minuscula y Numeros">
+                <input class="validar" type="password" placeholder="Escriba su contraseña con minimo 8 caracteres con letras en Mayus, Minuscula y Numeros"
+                    id="password">
                 <label for="password"><span class="obligatorio">Campo Obligatorio *</span></label>
             </p>
             <p>
-                <i class="fas fa-birthday-cake icon"> </i> 
-                <input class="validar" type="text" placeholder="Ingrese Su edad" id="age">   
+                <i class="fas fa-birthday-cake icon"> </i>
+                <input class="validar" type="number" placeholder="Ingrese Su edad" id="age">
                 <label for="age"><span class="obligatorio">Campo Obligatorio *</span></label>
             </p>
             <p>
@@ -34,7 +38,9 @@
                 <label id="labelEnviar"></label>
                 <button type="submit"><i class="fas fa-birthday-cake icon">Enviar</i></button>
             </p>
+            <script src="js/funcionalidad.js"></script>
         </from>
     </div>
 </body>
+
 </html>
