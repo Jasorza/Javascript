@@ -1,13 +1,13 @@
 'use strict'
 //Declaracion de funcion
-// function saludar(){
-//     console.log('hola');
-// }
-// saludar();
-// // Expresion de funcion
-// const suma = function(){
-//     console.log(1 + 2);
-//}
+ function saludar(){
+     console.log('hola');
+ }
+ saludar();
+ // Expresion de funcion
+ const suma = function(){
+     console.log(1 + 2);
+}
 
 // function operacion(num1,num2){
 //     var res = num1+num2;
