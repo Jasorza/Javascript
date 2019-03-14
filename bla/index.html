@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
-</head>
-<body>
-	<!-- se crear el formulario con el un nombre, asi mismo se llama la funcion de js-->
-	<form action="" name="miForm" onsubmit="return validarFormulario();">
-		<input type="checkbox" name="michecbox" id="chech">
-		<input type="submit" value="Enviar">
-	</form>
-	<div id="info">
 
-	</div>
-	<script type="text/javascript">
-		function validarFormulario(){
-			// el documento.forms hace referencia a todos los posibles formularios que puedan estar en la pagina, seguido del nombre del formulario y seguido del nombre del atributo del checkbox y finalmente se usa el atributo checked 
-			// de esa manera podremos verificar que si dicho elemento (el checkbox) ha sido seleccionado
-			var elemento = document.forms['miForm']['michecbox'].checked;
-			if (elemento == true) {
-				document.getElementById('info').innerHTML= 'el elemento ha sido seleccionado';
-				//el return nos permite que el formulario no sea enviado por defecto
-				return false;
-			}else{
-				document.getElementById('info').innerHTML = 'el elemento no ha sido seleccionado';
-				return false;
-			}
-		}
-	</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <div class="contenedor-form">
+        <form action="#" method="post" onsubmit="return validar()">
+            <p class="nombre">
+                <input type="text" class="input" placeholder="Nombre" id="nombre" name="Nombre" onblur="revisar(this)"
+                    autocomplete="off">
+            </p>
+            <p class="correo">
+                <input type="email" class="input" placeholder="mail" id="mail" name="mail" onblur="revisar(this); revisaMail(this)"
+                    autocomplete="off">
+            </p>
+            <p class="telefono">
+                <input type="text" class="input" placeholder="telefono" id="telefono" name="telefono" onblur="revisar(this);  revisaNumero(this); revisaLongintud(this, 10)"
+                    autocomplete="off">
+            </p>
+            <p class="mensaje">
+                <textarea type="text" class="input" placeholder="mensaje" id="mensaje" name="mensaje" onblur="revisar(this); revisaLongintud(this, 10)"
+                    autocomplete="off"></textarea>
+            </p>
+            <div class="enviar">
+                <input type="submit" value="Enviar" id="enviar">
+                <div class="transicion"></div>
+            </div>
+        </form>
+    </div>
+    <script src="js/code.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" method="post" name="formulario">
+        uno: <input type="radio" name="input-radio" checked value="1">
+        dos: <input type="radio" name="input-radio" value="2">
+        tres: <input type="radio" name="input-radio" value="3">
+        cuatro: <input type="radio" name="input-radio" value="4">
+        cinco: <input type="radio" name="input-radio" value="5">
+        <button type="button" id="btnRadio">Obtener el valor del input-radio seleccioado</button>
+        <br><br>
+        <input type="checkbox" name="input-chechbox" id="">
+        <label for="input-chechbox">Aceptar terminos y condiciones</label><br>
+        <button type="button" id="btnChechbox">Saber si el chechbox esta seleccionado</button>
+    </form>
+    <script type="text/javascript">
+        window.onload = function () {
+            var btnRadio = document.getElementById('btnRadio');
+            btnRadio.onclick = function () {
+                var inputRadio = document.forms['formulario']['input-radio'];
+                for (let x = 0; x < inputRadio.length; x++) {
+                    if (inputRadio[x].checked) {
+                        alert(inputRadio[x].value);
+                    }
+                }
+            }
+
+            var btnChechbox = document.getElementById('btnChechbox');
+            btnChechbox.onclick = function () {
+                if(document.forms['formulario']['input-chechbox'].checked){
+                    alert('Ok, has acceptado los terminos');
+                }else{
+                    alert('debes de aceptar los terminos');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
