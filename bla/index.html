@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<!-- se crear el formulario con el un nombre, asi mismo se llama la funcion de js-->
+	<form action="" name="miForm" onsubmit="return validarFormulario();">
+		<input type="checkbox" name="michecbox" id="chech">
+		<input type="submit" value="Enviar">
+	</form>
+	<div id="info">
+
+	</div>
+	<script type="text/javascript">
+		function validarFormulario(){
+			// el documento.forms hace referencia a todos los posibles formularios que puedan estar en la pagina, seguido del nombre del formulario y seguido del nombre del atributo del checkbox y finalmente se usa el atributo checked 
+			// de esa manera podremos verificar que si dicho elemento (el checkbox) ha sido seleccionado
+			var elemento = document.forms['miForm']['michecbox'].checked;
+			if (elemento == true) {
+				document.getElementById('info').innerHTML= 'el elemento ha sido seleccionado';
+				//el return nos permite que el formulario no sea enviado por defecto
+				return false;
+			}else{
+				document.getElementById('info').innerHTML = 'el elemento no ha sido seleccionado';
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>
